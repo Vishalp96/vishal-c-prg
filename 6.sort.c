@@ -2,12 +2,23 @@
 int sort(int n,int *);
 int main()
 {
-    int n=5,i;
-    int a[5]={25,45,89,15,62};
+    int n,i;
+
 
     printf("Pointer sort an array using pointer\n");
     printf("____________________________________\n");
     printf("\n");
+    printf("Input the number of minimum to store in the array:");
+    scanf("%d",&n);
+     printf("\nInput 5 members in th array:\n");
+
+//         for(i=0;i<n;i++)
+//    {
+//        scanf("%d",a[i]);
+//    }
+
+     int a[]={25,45,89,15,82};
+
     for(i=0;i<n;i++)
     {
         printf("element-%d : %d\n",i,a[i]);
@@ -22,7 +33,7 @@ int sort(int n,int *a)
     {
         for(j=0;j<n;j++)
         {
-            if(*(a+i)<*(a+j))
+            if(*(a+i)>*(a+j))
             {
                 t=*(a+i);
                 *(a+i)=*(a+j);
